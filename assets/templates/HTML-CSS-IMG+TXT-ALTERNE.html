@@ -1,0 +1,157 @@
+<style>
+    
+/*SECITION 3 : IMAGE + TEXTE */
+.container_text_center p {
+    text-align: center;
+}
+.container_img {
+    display: flex;
+    justify-content: center;
+}
+.text_SEO p {
+    text-align: center;
+}
+.cta_container_V2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+}
+.cta-v2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Sofia Pro Bold';
+    text-transform: uppercase;
+    width: 25%;
+    height: 45px;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: #FFF;
+}
+.h2_title-v2 {
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'MarionnaudParis RegularItalic';
+    font-style: italic;
+}
+.content_img_with_text{
+    width: 100%;
+}
+/*SECITION 3 : IMAGE + TEXTE */
+@media (min-width: 768px){
+.content_img_with_text{
+    width: inherit !important;
+}
+/* SECTION 3 : IMAGE + TEXTE */
+.container_img_with_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+/* .container_img_with_text_left {
+    display: flex;
+    justify-content: space-between;
+} */
+.container_img_with_text_left {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 1024px;
+}
+.container_img {
+    display: flex;
+    justify-content: center;
+}
+.container_text {
+    display: flex;
+    width: 50%;
+}
+.ml_text_center {
+    margin: 0 0 0 25px;
+}
+.container_text_center {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2em;
+}        
+.h2_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.h2_title-v2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.container_text_center p {
+    text-align: left;
+}
+/* .container_img_with_text_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+} */
+.container_img_with_text_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    gap: 15px;
+    width: 1024px;
+}
+/* .mr_mt_text_center {
+    margin: 2em 10px 0 0;
+} */
+.mr_1{
+    margin-right: 1em;
+}
+/* .custom_img{
+    margin: -20em 0 0 2em;
+} */
+/* SECTION 3 : IMAGE + TEXTE */
+}
+</style>
+<!-- SECTION IMG + TXT -->
+<section class="section_3">
+    <div class="title_h2">
+        <h2 class="h2_title">HTML Image + Texte Alterné<span class="highlight"></span></h2>
+    </div>
+    <div class="container_img_with_text">
+        <div class="container_img_with_text_left">
+            <div class="container_img">
+                <img src="https://placehold.co/500x322/png" alt="Default Image" class="content_img_with_text">
+            </div>
+            <div class="container_text">
+                <div class="container_text_center ml_text_center mr_1">
+                    <h2 class="h2_title-v2">Lorem ipsum dolor sit amet;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae deleniti, blanditiis, harum fuga eos perferendis ea amet eligendi dolores error modi alias aut culpa consequuntur dignissimos incidunt dolor exercitationem!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_img_with_text_right">
+            <div class="container_img custom_img">
+                <img src="https://placehold.co/500x322/png" alt="Default Image" class="content_img_with_text">
+            </div>
+            <div class="container_text">
+                <div class="container_text_center mr_mt_text_center">
+                    <h2 class="h2_title-v2">Lorem ipsum dolor sit amet;</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae deleniti, blanditiis, harum fuga eos perferendis ea amet eligendi dolores error modi alias aut culpa consequuntur dignissimos incidunt dolor exercitationem!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECTION IMG + TXT -->

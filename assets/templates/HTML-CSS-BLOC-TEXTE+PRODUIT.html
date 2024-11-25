@@ -1,0 +1,209 @@
+<style>
+    .container_carrousel_image {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+    align-items: center;
+}
+.content_carrousel_image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+}
+#container_prdt {
+    border: 1px solid #DDDDDD;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+#container_prdt:hover {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 5px 15px -8px;
+    transform: translate3d(0, -5px, 0);
+}
+.content_prdt {
+    margin: 10px;
+}
+.img_content_slider_prdt {
+    margin: 20px;
+}
+.prdct_desc h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.prdct_desc h4 {
+    font-family: 'Sofia Pro Light';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+.prdct_desc h5 {
+    font-family: 'Sofia Pro Light';
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price .old {
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #5D5D5D;
+}
+.price span {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.rank {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.first_star {
+    margin: 0;
+}
+.stars {
+    margin-left: 10px;
+}
+@media (min-width: 769px){
+    .container_carrousel_image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container_title_text {
+        margin: 0 10px 0 0;
+        width: 55%;
+    }
+    .mr_text_center {
+        margin: 0 10px 0 0;
+    }
+    .container_text_center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container_text_center p {
+        text-align: left;
+    }
+    .content_carrousel_image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        overflow-x: hidden;
+        width: 50%;
+    }
+    #container_prdt {
+        border: 1px solid #DDDDDD;
+        margin-right: 10px;
+    }
+    .content_prdt {
+        margin: 10px;
+    }
+    .img_content_slider_prdt {
+        margin: 20px;
+    }
+}
+</style>
+<section class="section_carrousel_image">
+    <div class="carrousel_image">
+        <h2 class="h2_title">Bloc Titre &amp; Texte + Produit <br class="br_">lorem <span class="highlight">ipsum</span>
+        </h2>
+        <div class="container_carrousel_image">
+            <div class="container_title_text">
+                <div class="container_text_center mr_text_center">
+                    <h2 class="h2_title-v2">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis nobis saepe
+                        fugiat. Necessitatibus itaque accusantium molestiae maxime alias eveniet labore quo soluta
+                        aliquam, animi libero fuga praesentium nobis placeat.</p>
+                </div>
+            </div>
+            <div class="content_carrousel_image">
+                <div>
+                    <div id="container_prdt">
+                        <div class="content_prdt">
+                            <span>Nouveauté</span>
+                            <div class="img_container_slider_prdt">
+                                <img src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/default_product_1.png"
+                                    alt="Parfum Lancôme" class="img_content_slider_prdt">
+                            </div>
+                            <div class="prdct_desc">
+                                <h3>Lancôme</h3>
+                                <h4>Lait Corps</h4>
+                                <h5>Hydratant à l'Aloe Vera</h5>
+                                <div class="price">
+                                    <span class="old">64,20€</span>
+                                    <span class="current">48,20€</span>
+                                </div>
+                                <div class="rank">
+                                    <img class="stars first_star"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/half_star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/empty_star.png"
+                                        alt="Star for ranking">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="container_prdt">
+                        <div class="content_prdt">
+                            <span class="ishidden">Nouveauté</span>
+                            <div class="img_container_slider_prdt">
+                                <img src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/default_product_2.png"
+                                    alt="Parfum Lancôme" class="img_content_slider_prdt">
+                            </div>
+                            <div class="prdct_desc">
+                                <h3>Lancôme</h3>
+                                <h4>Lait Corps</h4>
+                                <h5>Hydratant à l'Aloe Vera</h5>
+                                <div class="price">
+                                    <span class="old">64,20€</span>
+                                    <span class="current">48,20€</span>
+                                </div>
+                                <div class="rank">
+                                    <img class="stars first_star"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/half_star.png"
+                                        alt="Star for ranking">
+                                    <img class="stars"
+                                        src="https://www.marionnaud.fr/elab/mfr/2022/PAGES/W47_ART-OF-GIFTING/V2/assets/images/empty_star.png"
+                                        alt="Star for ranking">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,122 @@
+<style>
+        /* SECTION 1 : HEADER */
+        .img_content_header_mobile, 
+    .img_content_header_desktop {
+        width: 100%;
+    }
+    .img_content_header_desktop {
+        display: none;
+    }
+    .txt_container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EDE8FF;
+    }
+    .txt_content_header {
+        padding: 10px;
+    }
+    .h1_title {
+        font-family: 'Sofia Pro Bold';
+        text-transform: uppercase;
+        /* font-weight: bold; */
+        margin: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+    .txt_container_header p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .h2_title {
+        font-family: 'Sofia Pro Regular';
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .txt_container_header .mrn-paris-italic-lowcase {
+        font-family: 'MarionnaudParis TextBookItalic';
+        text-transform: initial;
+    }
+    .txt_container_header .mrn-paris-regul-ita-upcase {
+        font-family: 'MarionnaudParis RegularItalic';
+        text-transform: uppercase;
+    }
+    /* SECTION 1 : HEADER */
+@media (min-width: 768px){
+    /* SECTION 1 : HEADER */
+    .bloc_1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .img_container_header {
+        width: 60%;
+    }
+    .img_content_header_mobile {
+        display: none;
+    }
+    .img_content_header_desktop {
+        display: block;
+    }
+    .txt_container_header {
+        display: flex;
+        width: 40%;
+        background-color: #EDE8FF;
+    }
+    .txt_content_header {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0;
+    }
+    .h1_title {
+        text-transform: uppercase;
+        font-family: 'MarionnaudParis TextBookItalic';
+        font-size: 40px;
+        text-align: left;
+    }
+    .txt_container_header p {
+        text-align: left;
+    }
+    .cta_container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+    }
+    /* SECTION 1 : HEADER */
+}
+</style>
+<section class="section_1">
+    <div class="bloc_1 the_header">
+        <div class="img_container_header">
+            <img src="https://placehold.co/359x219/png" alt="header" class="img_content_header_mobile">
+            <img src="https://placehold.co/705x347/png" alt="header" class="img_content_header_desktop">
+        </div>
+        <div class="txt_container_header">
+            <div class="txt_content_header">
+                <!-- <span>Lorem ipsum dolor sit</span>
+                            <hr class="hr_mobile">
+                            <hr class="hr_desktop-v2"> -->
+                <h1 class="h1_title">
+                    Header without CTA
+                    <span class="alt_ff">dolor sit, amet</span> 
+                    <!-- <span class="second_ff">consectetur</span>  -->
+                </h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, aliquid repellat cumque tenetur, modi
+                    assumenda sed,
+                    officia dolorem velit blanditiis perspiciatis. Quaerat ipsam quisquam nam alias adipisci labore iure
+                    perferendis!
+                </p>
+                <!-- <p id="read_more" onclick="see_more()">Lire plus</p> -->
+            </div>
+        </div>
+    </div>
+</section>

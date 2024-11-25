@@ -1,0 +1,11 @@
+1.
+
+J'ai développé une application qui permet de voir le code html une fois qu'il est renseigné dans un champs lecteur de code ou lorsqu'on upload ce fichier html.
+Lorsqu'on clique sur "Envoyer", l'appli affiche une iframe dans laquelle se trouve le code, on a donc la possibilité de le visualiser. 
+Je vais te fournir le html puis le script dans 2 messages différents pour que tu vois de quoi je parle. Je te poserai ensuite ma question.
+
+2.
+
+Voici ma question : Comment faire pour développer une fonctionnalité qui permet de modifier en live le contenu du code qu'on a upload, lorsqu'on est dans l'iframe par exemple. 
+Je souhaiterais qu'au passage de la souris il détecte les différentes balises, les sections, les titres, les images etc. 
+et que je permette à l'utilisateur de modifier le texte, changer la couleur d'un fond, d'un texte, ajouter l'url d'une image etc. Est ce que tu vois ce que je veux dire ?

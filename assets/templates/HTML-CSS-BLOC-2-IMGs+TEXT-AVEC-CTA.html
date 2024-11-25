@@ -1,0 +1,120 @@
+<style>
+    .container__bloc-x2_img_and_text{
+        margin: 0 0 2em 0;
+    }
+    .h3_title{
+        font-family: 'Sofia Pro Bold';
+        text-transform: uppercase;
+        font-size: 28px;
+        margin: 0em 0 0 0;
+        text-align: left;
+    }
+    .container__text-mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .container__text-desktop{
+        display: none;
+    }
+    .container__imgs {
+        display: flex;
+        gap: 10px;
+    }
+    .content_image_left,
+    .content_image_right{
+        width: 100%;
+    }
+    .container__bloc-x2_img_and_text .cta_black{
+        width: 13em;
+    }
+    .content__bloc-x2_img_and_text .subtitle{
+        font-style: italic;
+    }
+    @media (min-width: 768px){
+        .content__bloc-x2_img_and_text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0px;
+            width: 100%;
+        }
+        .container__imgs {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            /* width: 75%; */
+        }
+        .container__text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #FAFAFA;
+            padding: 10px;
+            gap: 10px;
+            width: 30%;
+        }
+        .container__text-mobile{
+            display: none;
+        }
+        .container__text-desktop{
+            display: flex;
+        }
+    }
+</style>
+<div class="container__bloc-x2_img_and_text">
+    <div class="content__bloc-x2_img_and_text">
+        <div class="container__text-mobile">
+            <div class="container__subtitle">
+                <p class="subtitle">
+                    Jeu Concours
+                </p>
+            </div>
+            <div class="container__title">
+                <h3 class="h3_title">
+                    E-Calendrier de l'avent
+                </h3>
+            </div>
+        </div>
+        <div class="container__imgs">
+            <div class="container_image_left">
+                <img src="https://placehold.co/370x255/png" alt="Image de Gauche - Marionnaud" class="content_image_left">
+            </div>
+            <div class="container_image_right">
+                <img src="https://placehold.co/265x255/png" alt="Image de Droite - Marionnaud" class="content_image_right">
+            </div>
+        </div>
+        <div class="container__text-mobile">
+            <div class="content__text">
+                <p class="__text">
+                    Des cadeaux à remporter tous les jours avant les fêtes !
+                </p>
+            </div>
+            <div class="container__cta">
+                <div class="cta_black">Je tente ma chance</div>
+            </div>
+        </div>
+        <div class="container__text container__text-desktop">
+            <div class="container__subtitle">
+                <p class="subtitle">
+                    Jeu Concours
+                </p>
+            </div>
+            <div class="container__title">
+                <h3 class="h3_title">
+                    E-Calendrier de l'avent
+                </h3>
+            </div>
+            <div class="content__text">
+                <p class="__text">
+                    Des cadeaux à remporter tous les jours avant les fêtes !
+                </p>
+            </div>
+            <a href="#" target="_blank">
+                <div class="container__cta">
+                    <div class="cta_black">Je tente ma chance</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

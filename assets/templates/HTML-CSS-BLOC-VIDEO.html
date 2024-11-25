@@ -1,0 +1,71 @@
+<style>
+    .container_bloc_video_mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container_video_mobile {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+.container_bloc_video_desktop {
+    display: none;
+}
+@media (min-width: 769px){
+    .container_bloc_video_desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container_bloc_video_mobile {
+        display: none;
+    }
+    .container_video_desktop_row1 {
+        display: flex;
+        justify-content: center;
+    }
+    .container_video_desktop_row2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 1em 1em 0 1em;
+    }
+}
+</style>
+<section class="section_bloc_video">
+    <div class="title_h2">
+        <h2 class="h2_title">BLOC VIDEO : Lorem ipsum dolor, <br><span class="highlight">consectetur adipi</span></h2>
+    </div>
+    <div class="container_bloc_video">
+        <div class="container_bloc_video_mobile">
+            <div class="container_video_mobile">
+                <img src="https://placehold.co/400x215/png" alt="Default Video" class="content_video_mobile">
+            </div>
+            <div class="container_video_mobile">
+                <img src="https://placehold.co/400x215/png" alt="Default Video" class="content_video_mobile">
+            </div>
+            <div class="container_video_mobile">
+                <img src="https://placehold.co/400x215/png" alt="Default Video" class="content_video_mobile">
+            </div>
+        </div>
+        <div class="container_bloc_video_desktop">
+            <div class="container_video_desktop_row1">
+                <div class="container_video_desktop_row1">
+                    <img src="https://placehold.co/650x320/png" alt="Default Video"
+                        class="content_video_desktop">
+                </div>
+            </div>
+            <div class="container_video_desktop_row2">
+                <div class="container_video_desktop_row2">
+                    <img src="https://placehold.co/450x275/png" alt="Default Video"
+                        class="content_video_desktop">
+                </div>
+                <div class="container_video_desktop_row2">
+                    <img src="https://placehold.co/450x275/png" alt="Default Video"
+                        class="content_video_desktop">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

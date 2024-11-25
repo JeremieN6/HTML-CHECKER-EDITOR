@@ -1,0 +1,208 @@
+<style>
+/*MENU TIROIR + IMAGE*/
+.row_tiroir {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+    line-height: 40pt;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8064DB;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.row_tiroir_custom{
+    line-height: 20pt;
+}
+.container_arrow_bottom {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-bottom {
+    display: flex;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #8064DB;
+    border-left: 2px solid #8064DB;
+    transform: rotate(225deg);
+}
+
+#content_definition {
+    color: black;
+    text-transform: initial;
+    font-weight: 100;
+    margin: 1em 0 0 0;
+}
+
+.upcase_bold {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container_cta {
+    display: flex;
+    justify-content: center;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.m-bottom-2 {
+    margin-bottom: 2em;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+#content_definition1,
+#content_definition2,
+#content_definition3,
+#content_definition4,
+#content_definition5,
+#content_definition6 {
+    display: none;
+}
+
+.content_definition {
+    transition: opacity 500ms ease-in-out;
+}
+
+.upcase_bold {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content_image_menu_tiroir {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    object-position: 0 -110px;
+
+}
+
+/*MENU TIROIR + IMAGE*/
+/*MENU TIROIR + IMAGE*/
+@media (min-width:768px){
+.container_menu_tiroir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em 0 2em 2em;
+    width: 50%;
+}
+
+.container_menu_tiroir_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em 0 0 0;
+}
+
+.row_tiroir {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+    line-height: 40pt;
+    cursor: pointer;
+    color: #8064DB;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#content_definition1,
+#content_definition2,
+#content_definition3,
+#content_definition4,
+#content_definition5,
+#content_definition6 {
+    display: none;
+}
+
+.content_definition {
+    transition: opacity 500ms ease-in-out;
+}
+
+.upcase_bold {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content_image_menu_tiroir {
+    width: 500px;
+    height: 650px;
+    object-fit: contain;
+    object-position: inherit;
+}
+
+            
+}
+/*MENU TIROIR + IMAGE*/
+</style>
+    <!-- SECTION x : IMAGE + MENU TIROIR -->
+    <section class="section_x">
+        <div class="container_menu_tiroir_image">
+            <div class="content_menu_tiroir_image fade-in-left">
+                <img src="https://placehold.co/500x650/png"
+                    alt="Default Image" class="content_image_menu_tiroir">
+            </div>
+            <div class="container_menu_tiroir fade-in-right">
+                <div class="container_tiroir">
+                    <div class="row_tiroir" onclick="turnArrow();">
+                        Lorem ipsum dolor sit amet consectetur
+                        <div class="container_arrow_bottom">
+                            <div class="arrow-bottom" id="arrowBottom"></div>
+                        </div>
+                    </div>
+                    <div class="content_definition" id="content_definition1">
+                        <!-- <p class="upcase_bold">A la recherche d’un ravissant cadeau ?</p> -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… 
+                    </div>
+                </div>
+                <div class="container_tiroir">
+                    <div class="row_tiroir" onclick="turnArrow2();">
+                        Lorem ipsum dolor sit amet consectetur
+                        <div class="container_arrow_bottom">
+                            <div class="arrow-bottom" id="arrowBottom2"></div>
+                        </div>
+                    </div>
+                    <div class="content_definition" id="content_definition2">
+                        <!-- <p class="upcase_bold">Passez votre commande en ligne.</p> -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… 
+                    </div>
+                </div>
+                <div class="container_tiroir">
+                    <div class="row_tiroir" onclick="turnArrow3();">
+                        Lorem ipsum dolor sit amet consectetur
+                        <div class="container_arrow_bottom">
+                            <div class="arrow-bottom" id="arrowBottom3"></div>
+                        </div>
+                    </div>
+                    <div class="content_definition" id="content_definition3">
+                        <!-- <p class="upcase_bold">Un cadeau dans son plus bel emballage.</p> -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo modi iure eligendi voluptatem 
+                        nobis saepe nostrum. Sequi adipisci, ex laudantium id asperiores placeat iusto quibusdam, 
+                        reiciendis dolores omnis possimus sed… 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION x : IMAGE + MENU TIROIR -->

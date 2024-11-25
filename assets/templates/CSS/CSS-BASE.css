@@ -1,0 +1,483 @@
+<style>/*FONTS*/
+/* @font-face {
+    font-family: "Sofia Pro Regular";
+    src: url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaProRegular.woff2") format("woff2"),
+        url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaProRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sofia Pro Medium";
+    src: url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Medium.woff2") format("woff2"),
+        url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sofia Pro Bold";
+    src: url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Bold.woff2") format("woff2"),
+        url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sofia Pro Light";
+    src: url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Light.woff2") format("woff2"),
+        url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sofia Pro Semi-Bold";
+    src: url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SofiaPro-SemiBold.woff2") format("woff2"),
+        url("https://www.marionnaud.fr/elab/mfr/2022/PAGES/ENGAGEMENT/ASSETS/styles/fonts/SSofiaPro-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "MarionnaudParis TextBookItalic";
+    src: url("https://www.marionnaud.fr/elab/mfr/2023/07_DIVERS/DEFAULT_TEMPLATE/assets/fonts/marionnaud_paris/MarionnaudParis-TextBookItalic.otf") format("otf");
+}
+
+@font-face {
+    font-family: "MarionnaudParis Regular";
+    src: url("https://www.marionnaud.fr/elab/mfr/2023/07_DIVERS/DEFAULT_TEMPLATE/assets/fonts/marionnaud_paris/MarionnaudParis-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: "MarionnaudParis RegularItalic";
+    src: url("https://www.marionnaud.fr/elab/mfr/2023/07_DIVERS/DEFAULT_TEMPLATE/assets/fonts/marionnaud_paris/MarionnaudParis-RegularItalic.otf") format("otf");
+} */
+
+/*FONTS*/
+/*GENERAL CSS PAGE*/
+* {
+    font-family: 'Sofia Pro Regular';
+}
+
+main,
+.breadcrumb-container {
+    background-color: #FFF;
+}
+
+a,
+a:hover,
+a:after {
+    text-decoration: inherit;
+    color: inherit;
+}
+.bold{
+    font-weight: bold;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.highlight {
+    box-shadow: inset 0 -22px 0 0 #EDE8FF;
+    font-family: 'Sofia Pro Bold';
+}
+
+.highlight-2 {
+    box-shadow: inset 0 -22px 0 0 #FFFFFF;
+    font-family: 'Sofia Pro Bold';
+}
+section {
+    padding: 10px 0;
+}
+
+.onlyMobile{
+    display: block;
+}
+.activeOnMobile{
+    display: block;
+}
+.activeOnDesktop{
+    display: none;
+}
+hr.desktop {
+    display: none;
+}
+
+hr.mobile {
+    display: block;
+    border-top: 3px solid #000;
+    width: 5%;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+}
+
+.arrow-right {
+    display: flex;
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    transform: rotate(135deg);
+}
+
+.small_descr p {
+    font-family: "MarionnaudParis RegularItalic";
+    font-size: 16px;
+    text-align: center;
+}
+
+/*TITRE*/
+.h1_title {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'MarionnaudParis RegularItalic';
+}
+.h2_title {
+    /* color: #8064db; */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.h1_title .alt_ff {
+    text-transform: lowercase;
+}
+/* .text_banner span {
+    font-family: "Times New Roman", "serif";
+    font-style: italic;
+    letter-spacing: 0px;
+    font-size: 22px;
+} */
+
+.SEO_title {
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", "serif";
+    font-style: italic;
+    text-align: center;
+}
+
+.text_SEO p {
+    text-align: center;
+}
+
+.h2_title-v2 {
+    letter-spacing: 0px;
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'MarionnaudParis RegularItalic';
+    font-style: italic;
+}
+
+.container_text_center p {
+    text-align: center;
+}
+
+/*TITRE*/
+/*ETUQUETTE SUR IMAGE BLOC xN*/
+.container_label {
+    display: flex;
+    justify-content: center;
+}
+
+.txt_on_image {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1em;
+    margin-top: -5.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    height: 4em;
+    text-transform: uppercase;
+    width: 20em;
+}
+
+.txt_on_image_sm {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1em;
+    margin-top: -5.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    height: 4em;
+    text-transform: uppercase;
+    width: auto;
+    padding: 0 10px;
+}
+
+.adjust {
+    padding-left: 3em;
+}
+
+/*ETUQUETTE SUR IMAGE BLOC xN*/
+/*SEO*/
+.addedText{
+    display: none;
+}
+/*SEO*/
+/*BUTTONS*/
+.CTA_acces_rapides {
+    width: 10em;
+    height: 2.5em;
+    font-size: 14px;
+    border-radius: 22px;
+    background-color: #EDE8FF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8064DB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.container-text-with-carrousel .cta_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aLink{
+    color: #8064db;
+    text-decoration: underline;
+    font-family: 'Sofia Pro Regular';
+    transition: ease-in 500ms;
+}
+.aLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.readMore, 
+.readLess,
+.aLink{
+    color: #8064db;
+    text-decoration: underline;
+    font-family: 'Sofia Pro Regular';
+    transition: ease-in 500ms;
+}
+.readMoreVariante, 
+.readLessVariante{
+    color: #000;
+    font-family: 'Sofia Pro Regular';
+    transition: ease-in 500ms;
+}
+.readMore:hover, 
+.readLess:hover,
+.aLink:hover{
+    font-family: 'Sofia Pro Bold';
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+.readMoreVariante:hover, 
+.readLessVariante:hover{
+    font-family: 'Sofia Pro Bold';
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.container_cta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.cta_black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Sofia Pro Bold';
+    width: auto;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+
+.cta_white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Sofia Pro Bold';
+    width: auto;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+
+.cta_purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Sofia Pro Bold';
+    width: auto;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #702082;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out;
+}
+
+.cta_black:hover, 
+.cta_white:hover, 
+.cta_purple:hover{
+    transform: scale(.9);
+}
+.cta_black_alternatif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Sofia Pro Bold';
+    width: 20em;
+    height: 40px;
+    letter-spacing: 1px;
+    border: 0.5px solid #FFF;
+    background-color: #1C1C1C;
+    color: #FFF;
+    text-transform: uppercase;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+.xl_cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Sofia Pro Bold';
+    width: 80%;
+    height: 50px;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.container_text .container_cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+/*BUTTONS*/
+
+/*SECTION*/
+.section_2,.section_3,
+.section_4,.section_5{
+    margin: 2em 0;
+}
+/*SECTION*/
+@media (min-width: 769px) {
+    hr.mobile {
+        display: none;
+    }
+
+    hr.desktop {
+        display: block;
+        border-top: 3px solid #000;
+        width: 5%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .onlyMobile{
+        display: none;
+    }
+    .activeOnMobile{
+        display: none;
+    }
+    .activeOnDesktop{
+        display: block;
+    }
+    /*TITLE*/
+    .h1_title .alt_ff {
+        font-family: 'MarionnaudParis RegularItalic';
+        text-transform: lowercase;
+        font-size: 35px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .h1_title .second_ff {
+        font-family: 'MarionnaudParis TextBookItalic';
+        font-size: 40px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .h2_title {
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .container_text_center p {
+        text-align: left;
+    }
+
+    .small_descr p {
+        font-size: 20px;
+    }
+
+    .h2_title-v2 {
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    /*TITLE*/
+
+    /*BUTTONS*/
+    .xl_cta_desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Sofia Pro Bold';
+        width: 100%;
+        height: 40px;
+        padding: 0 30px;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+    .container_text .container_cta{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0;
+    }
+    /*BUTTONS*/
+}
+
+/* GENERAL CSS PAGE */</style>

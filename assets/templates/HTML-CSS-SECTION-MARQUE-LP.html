@@ -1,0 +1,162 @@
+<style>
+    .section_bloc_marques .h2_title{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .content_subtitle{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .container_bloc_marques{
+        display: flex;
+        justify-content: center;
+        /* justify-content: flex-start; */
+        align-items: center;
+        width: 100%;
+    }
+    .content_bloc_marques {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .top_row, .bottom_row {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+    }
+    .bloc_marque{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        /* text-align: center; */
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+    }
+    .content_image{
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        height: 115px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 300ms ease-in;
+    }
+    /* .content_image:hover{
+        filter: brightness(110%);
+    } */
+    .title_marque{
+        display: inline-block;
+        font-family: 'Sofia Pro Bold';
+        font-size: 18px;
+    }
+    .title_marque:after{
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: black;
+        transition: 300ms;
+    }
+    .title_marque:hover:after{
+        width: 100%;
+    }
+    .container_title_marque{
+        cursor: pointer;
+        height: 32px;
+    }
+    .content_title_marque{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+    @media (min-width: 768px){
+        .content_bloc_marques {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            width: 1024px;
+        }
+    }
+</style>
+<section class="section_bloc_marques">
+    <div class="container_tile">
+        <h2 class="h2_title">
+            Section marque à la une (LP)
+        </h2>
+        <p class="content_subtitle">
+            Découvrez les toutes dernières nouveautés et les best-sellers de vos marques favorites !
+        </p>
+    </div>
+    <div class="container_bloc_marques">
+        <div class="content_bloc_marques">
+            <div class="top_row">
+                <a href="#">
+                    <div class="bloc_marque marque_1">
+                        <div class="container_image">
+                            <img src="https://placehold.co/245x115/png" alt="Default Image" class="content_image">
+                        </div>
+                        <div class="container_title_marque">
+                            <div class="content_title_marque">
+                                <p class="title_marque">
+                                    Marque #1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bloc_marque marque_2">
+                        <div class="container_image">
+                            <img src="https://placehold.co/245x115/png" alt="Default Image" class="content_image">
+                        </div>
+                        <div class="container_title_marque">
+                            <div class="content_title_marque">
+                                <p class="title_marque">
+                                    Marque #2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom_row">
+                <a href="#">
+                    <div class="bloc_marque marque_3">
+                        <div class="container_image">
+                            <img src="https://placehold.co/245x115/png" alt="Default Image" class="content_image">
+                        </div>
+                        <div class="container_title_marque">
+                            <div class="content_title_marque">
+                                <p class="title_marque">
+                                    Marque #3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bloc_marque marque_4">
+                        <div class="container_image">
+                            <img src="https://placehold.co/245x115/png" alt="Default Image" class="content_image">
+                        </div>
+                        <div class="container_title_marque">
+                            <div class="content_title_marque">
+                                <p class="title_marque">
+                                    Marque #4
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

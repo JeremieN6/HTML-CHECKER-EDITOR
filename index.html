@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>✨ Preview HTML/CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            cursor: default;
+            /* Désactive le curseur par défaut */
+        }
+
+        .step {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #preview-frame {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            /* width: 100%; */
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .container-illu-header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .illu-header {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><strong>HTML Checker ✨</strong></li>
+            </ul>
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <!-- <li><a href="#" role="button">Bouton</a></li> -->
+                <li id="confettiButton"><a href="#" role="button">Lancer les confettis !</a></li>
+                <li><a id="theme_switcher" class="theme_switcher" aria-label="Changer le thème"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <hgroup>
+                <h1>HTML Checker ✨</h1> <br>
+                <p>Ceci est un outil qui permet de tester vos composants HTML lorsque vous faites des modifications.
+                    <br>
+                    La prévisualisation réplique la façon la page s'affichera sur la page du site une fois transféré sur
+                    le CMS.
+                </p>
+            </hgroup>
+            <div class="container-illu-header">
+                <img style="border-radius: 50%;" src="./assets/images/illu-header.png" class="illu-header"
+                    alt="Illustration">
+                <!-- <img style="border-radius: 50%;" src="https://placehold.co/250x250/png" alt="Illustration"> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="step1" class="step active">
+            <hgroup>
+                <h2>Étape 1 : Ajoutez votre code HTML/CSS</h2> <br>
+                <p>Selectionnez le code HTML/CSS que vous souhaitez visualiser/modifier. <br>
+                    Faites le soit en copiant/collant le code, soit en l'uploadant depuis vos fichiers bureau.</p>
+            </hgroup>
+            <div class="grid">
+                <textarea id="code-input" placeholder="Collez ici votre code HTML avec CSS"></textarea>
+                <input type="file" id="file-input" accept=".html">
+            </div>
+            <br><br>
+            <button id="submit-btn">Envoyer</button>
+        </div>
+
+        <div id="step2" class="step">
+            <h2>Étape 2 : Prévisualisation - Modification</h2>
+            <iframe id="preview-frame"></iframe>
+            <!-- Modal pour modifier l'image -->
+            <dialog id="image-modal">
+                <article>
+                    <header>
+                        <a href="#close" aria-label="Close" class="close"></a>
+                        <h2>Modifier l'URL de l'image</h2>
+                    </header>
+                    <form id="image-form">
+                        <label for="image-url">Nouvelle URL de l'image :</label>
+                        <input type="url" id="image-url" name="image-url" required>
+                        <footer class="grid">
+                            <button type="submit" class="primary">Enregistrer</button>
+                            <a href="#close">
+                                <button role="button" class="secondary">Annuler</button>
+                            </a>
+                        </footer>
+                    </form>
+                </article>
+            </dialog>
+            <!-- Modal pour modifier le texte -->
+            <dialog id="text-modify-modal">
+                <article>                        
+                    <header>
+                        <h2>Modifier le texte</h2>
+                    </header>
+                    <form method="dialog">
+                        <div class="content">
+                            <label for="font-size">Taille du texte:</label>
+                            <input type="number" id="font-size" name="font-size" min="10" max="100" value="18">
+
+                            <label for="text-color">Couleur du texte:</label>
+                            <input type="color" id="text-color" name="text-color">
+                        </div>
+                        <footer class="grid">
+                            <button type="button" id="apply-changes">Appliquer</button>
+                            <button type="button" id="close-modal" class="secondary">Fermer</button>
+                        </footer>
+                    </form>
+                </article>
+
+            </dialog>
+
+            <br><br>
+            <div class="grid">
+                <button id="back-btn">Retour</button>
+                <button id="download-btn">Télécharger</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app-v2.js"></script>
+    <script src="assets/js/switchTheme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="assets//js/confetti.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/mulish');
+        body{
+            font-family: 'Mulish', sans-serif;
+        }
+
+        /*BUTTON*/
+        .defaultButton{
+            background-color: #ff4081;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .defaultButton:hover{
+            background-color: #e73370;
+        }
+        .w-auto{
+            width: auto;
+        }
+        .w-100{
+            width: 100%;
+        }
+        .w-30{
+            width: 30%;
+        }
+        /*BUTTON*/
+        .content_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .content_hero_banner {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            /* background: #ECE1FF; */
+        }
+        .container_hero_banner_text, 
+        .container_hero_banner_illustration {
+            width: 90%;
+        }
+        /*OUR APP*/
+        .content_app_data {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .container_our_app {
+            padding: 10px 25px;
+        }
+        .content_our_app {
+            width: 100%;
+        }
+        .app_data {
+            text-align: center;
+        }
+        p.content_app_data_number {
+            font-weight: 800;
+            font-size: 32px;
+            color: #26256A;
+            margin: 0;
+        }
+        p.content_app_data_discribe {
+            font-weight: 500;
+            font-size: 20px;
+            color: #26256A;
+            margin: 0;
+        }
+        .containerMoreInformations {
+            background-color: rgb(108, 85, 224);
+            color: #fff;
+        }
+        /*OUR APP*/
+        /*REVIEW*/
+        .containerReview {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .container_reviews {
+            padding: 10px 25px;
+        }
+        .content_reviews {
+            width: 100%;
+        }
+        .contentVerifiedUser {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .theReview {
+            background: rgba(237, 225, 255, 0.58);
+            box-shadow: rgb(220, 214, 255) -3.47143px -2.89286px 2.31429px inset;
+            backdrop-filter: blur(8.1px);
+            border-radius: 14px;
+            margin-bottom: 1em;
+            flex-direction: column;
+            display: flex;
+            padding: 25px 25px 0;
+        }
+        img.review_star {
+            width: 30px;
+        }
+        p.AuthorReview {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        p.VerifiedUserText {
+            font-weight: 400;
+            font-size: 18px;
+        }
+        p.theRiviewContent {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.85px;
+            margin-bottom: 0px;
+            /* width: 80%; */
+        }
+        /*REVIEW*/
+        /*MORE INFO*/
+        .contentMoreInformations {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .containerMoreInformationsText {
+            padding: 20px;
+        }
+        /*MORE INFO*/
+        /*FOOTER*/
+        .contentRights__Cards {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .containerCards {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .footer{
+            background-color: rgb(34, 34, 34);
+            color: white;
+            padding: 1em;
+            font-family: Mulish, sans-serif;
+        }
+        .contentCards{
+            width: 60%;
+        }
+        .cards{
+            width: 100%;
+        }
+        p.rights {
+            font-size: smaller;
+            text-align: start;
+            color: #949495;
+        }
+        li{
+            list-style: none;
+        }
+        .mainTab{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 15px 0 5px;
+        }
+        .subTab:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /*FOOTER*/
+        @media(min-width: 768px){
+            .content_header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        .content_hero_banner {
+            flex-direction: row;
+        }
+        .container_hero_banner_text,
+        .container_hero_banner_illustration {
+            width: 50%;
+        }
+        .container_hero_banner_text {
+            padding: 25px 30px;
+        }
+        .container_hero_banner_illustration{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        img.contenthero_banner_illustration {
+            width: 60%;
+        }
+        .content_app_data {
+            flex-direction: row;
+        }
+        .contentMoreInformations {
+            flex-direction: row;
+        }
+        /*REVIEW*/
+        .containerReview {
+            flex-direction: row;
+        }
+        /*FOOTER*/
+        .contentRights__Cards{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .containerCards{
+            display: flex;
+            justify-content: flex-end;
+        }
+        }
+    </style>
+    <section class="sectionHeader">
+        <div class="container_header">
+            <div class="content_header">
+                <div class="container_logo">
+                    <img src="https://www.marys.app/assets/newDesign/logo.png" alt="" class="content_logo">
+                </div>
+                <div class="containerButton">
+                    <div class="defaultButton w-auto">Login</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionHeroBanner">
+        <div class="container_hero_banner">
+            <div class="content_hero_banner">
+                <div class="container_hero_banner_text">
+                    <div class="containerTitle">
+                        <h1 class="heroTitle">Get your face reading report using our smart algorithm!</h1>
+                    </div>
+                    <div class="container_hero_title_description">
+                        <p class="content_hero_banner_description">
+                            Whether you want to learn more about your past, present & future, become a better judge of character or find out about partner compatibility, face reading has you covered. <br>
+                            Take your guesses and hit the START button to start face reading!
+                        </p>
+                    </div>
+                    <div class="containerButton">
+                        <div class="defaultButton w-30">Start Reading</div>
+                    </div>
+                </div>
+                <div class="container_hero_banner_illustration">
+                    <img src="https://www.marys.app/assets/newDesign/main%20header.jpg" alt="" class="contenthero_banner_illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionOurApp">
+        <div class="container_our_app">
+            <div class="content_our_app">
+                <div class="container_h2">
+                    <h2 class="h2_title"> Our App is actively used by users all across the globe </h2>
+                </div>
+                <div class="container_app_data">
+                    <div class="content_app_data">
+                        <div class="app_data app_data_1">
+                            <div class="container_app_data_illu">
+                                <img src="https://www.marys.app/assets/newDesign/img1.jpg" alt="" class="content_app_data_illu">
+                            </div>
+                            <div class="container_app_data_number">
+                                <p class="content_app_data_number"> 85,846</p>
+                            </div>
+                            <div class="container_app_data_discribe">
+                                <p class="content_app_data_discribe">Active users</p>
+                            </div>
+                        </div>
+                        <div class="app_data app_data_2">
+                            <div class="container_app_data_illu">
+                                <img src="https://www.marys.app/assets/newDesign/Group%203.jpg" alt="" class="content_app_data_illu">
+                            </div>
+                            <div class="container_app_data_number">
+                                <p class="content_app_data_number"> 250,687</p>
+                            </div>
+                            <div class="container_app_data_discribe">
+                                <p class="content_app_data_discribe">Generated facial reports</p>
+                            </div>
+                        </div>
+                        <div class="app_data app_data_3">
+                            <div class="container_app_data_illu">
+                                <img src="https://www.marys.app/assets/newDesign/Group%204.jpg" alt="" class="content_app_data_illu">
+                            </div>
+                            <div class="container_app_data_number">
+                                <p class="content_app_data_number"> 5,567,625</p>
+                            </div>
+                            <div class="container_app_data_discribe">
+                                <p class="content_app_data_discribe">Facial landmarks analyzed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionReviews">
+        <div class="container_reviews">
+            <div class="content_reviews">
+                <div class="container_h2">
+                    <h2 class="h2_title"> Check out our reviews!</h2>
+                </div>
+                <div class="containerReview">
+                    <div class="theReview review_1">
+                        <div class="container_stars">
+                            <div class="content_stars">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                            </div>
+                        </div>
+                        <div class="containerTextReview">
+                            <div class="contentTextReview">
+                                <p class="theRiviewContent"> I was pleasantly surprised at the accuracy of generated reports and how well they matched up with the personality of myself and my wife.</p>
+                            </div>
+                        </div>
+                        <div class="containerAuthorReview">
+                            <div class="contentAuthorReview">
+                                <p class="AuthorReview">Andrew, Austin, USA</p>
+                            </div>
+                        </div>
+                        <div class="containerVerifiedUser">
+                            <div class="contentVerifiedUser">
+                                <div class="containerVerifiedUserIcon">
+                                    <img src="https://www.marys.app/assets/icon-check.webp" alt="Verified User Icon" class="contentVerifiedUserIcon">
+                                </div>
+                                <div class="containerVerifiedUserText">
+                                    <div class="contentVerifiedUserText">
+                                        <p class="VerifiedUserText">Verified User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theReview review_2">
+                        <div class="container_stars">
+                            <div class="content_stars">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                            </div>
+                        </div>
+                        <div class="containerTextReview">
+                            <div class="contentTextReview">
+                                <p class="theRiviewContent">This is a fun little app, I really enjoyed the face reading guide that came with the report. </p>
+                            </div>
+                        </div>
+                        <div class="containerAuthorReview">
+                            <div class="contentAuthorReview">
+                                <p class="AuthorReview">Annie, Frankfurt, Germany</p>
+                            </div>
+                        </div>
+                        <div class="containerVerifiedUser">
+                            <div class="contentVerifiedUser">
+                                <div class="containerVerifiedUserIcon">
+                                    <img src="https://www.marys.app/assets/icon-check.webp" alt="Verified User Icon" class="contentVerifiedUserIcon">
+                                </div>
+                                <div class="containerVerifiedUserText">
+                                    <div class="contentVerifiedUserText">
+                                        <p class="VerifiedUserText">Verified User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theReview review_3">
+                        <div class="container_stars">
+                            <div class="content_stars">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                                <img src="https://www.marys.app/assets/icon-start-trustpilot.webp" alt="Star Icon Review" class="review_star">
+                            </div>
+                        </div>
+                        <div class="containerTextReview">
+                            <div class="contentTextReview">
+                                <p class="theRiviewContent"> I found that face reading is a very nice way to learn when my husband is trying to hide something from me! </p>
+                            </div>
+                        </div>
+                        <div class="containerAuthorReview">
+                            <div class="contentAuthorReview">
+                                <p class="AuthorReview">Melinda, Seattle, USA</p>
+                            </div>
+                        </div>
+                        <div class="containerVerifiedUser">
+                            <div class="contentVerifiedUser">
+                                <div class="containerVerifiedUserIcon">
+                                    <img src="https://www.marys.app/assets/icon-check.webp" alt="Verified User Icon" class="contentVerifiedUserIcon">
+                                </div>
+                                <div class="containerVerifiedUserText">
+                                    <div class="contentVerifiedUserText">
+                                        <p class="VerifiedUserText">Verified User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="MoreInformations">
+        <div class="containerMoreInformations">
+            <div class="contentMoreInformations">
+                <div class="containerMoreInformationsText">
+                    <div class="container_h2">
+                        <h2 class="h2_title variante_title">So, what are you waiting for?</h2>
+                    </div>
+                    <div class="containerSubtitle">
+                        <p class="subtitle">
+                            You are seconds away from finding out more about your personality. Take your guesses and hit the button! 
+                        </p>
+                    </div>
+                    <div class="containerButton">
+                        <div class="defaultButton w-30">Start Reading</div>
+                    </div>
+                </div>
+                <div class="containerMoreInformationsIllustration">
+                    <div class="contentMoreInformationsIllustration">
+                        <img src="https://www.marys.app/assets/newDesign/img4.png" alt="Illustration" class="MoreInformationsIllustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="containerNavigation">
+            <ul>
+                <li class="mainTab">App</li>
+                <li class="subTab">Manage Your Subscription</li>
+                <li class="mainTab">Engage</li>
+                <li class="subTab">Terms & Conditions</li>
+                <li class="subTab">Privacy Policy</li>
+                <li class="mainTab">Contact Us</li>
+                <li class="subTab">Support</li>
+                <li class="subTab">Contacts</li>
+            </ul>
+        </div>
+        <div class="containerRights__Cards">
+            <div class="contentRights__Cards">
+                <div class="contentRights">
+                    <p class="rights">
+                        2022 © ALL RIGHTS RESERVED · DISCLAIMER: FOR ENTERTAINMENT PURPOSES ONLY
+                    </p>
+                </div>
+                <div class="containerCards">
+                    <div class="contentCards">
+                        <img src="https://www.marys.app/assets/credit-cards.webp" alt="Credits Cards Logo" class="cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

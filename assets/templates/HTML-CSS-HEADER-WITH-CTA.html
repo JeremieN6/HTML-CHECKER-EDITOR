@@ -1,0 +1,175 @@
+<style>
+    /* SECTION 1 : HEADER */
+    .section_header_with_cta .h1_title{
+        text-align: left;
+    }
+    .img_content_header_mobile, 
+    .img_content_header_desktop {
+        width: 100%;
+    }
+    .img_content_header_desktop {
+        display: none;
+    }
+    .txt_container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EDE8FF;
+    }
+    .txt_content_header {
+        padding: 10px;
+    }
+    .h1_title {
+        text-transform: uppercase;
+        /* font-weight: bold; */
+        margin: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+    .txt_container_header p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .cta_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .xl_cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Sofia Pro Bold';
+        width: 80%;
+        height: 50px;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+    .cta-v2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Sofia Pro Bold';
+        text-transform: uppercase;
+        width: 60%;
+        height: 45px;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #FFF;
+    }
+    .h2_title {
+        font-family: 'Sofia Pro Regular';
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .txt_container_header .mrn-paris-italic-lowcase {
+        font-family: 'MarionnaudParis TextBookItalic';
+        text-transform: initial;
+    }
+    .txt_container_header .mrn-paris-regul-ita-upcase {
+        font-family: 'MarionnaudParis RegularItalic';
+        text-transform: uppercase;
+    }
+    /* SECTION 1 : HEADER */
+@media (min-width: 768px){
+    /* SECTION 1 : HEADER */
+    .bloc_1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .img_container_header {
+        width: 60%;
+    }
+    .img_content_header_mobile {
+        display: none;
+    }
+    .img_content_header_desktop {
+        display: block;
+    }
+    .txt_container_header {
+        display: flex;
+        width: 40%;
+        background-color: #EDE8FF;
+    }
+    .txt_content_header {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 20px;
+        padding: 0;
+    }
+    .h1_title {
+        text-transform: uppercase;
+        font-family: 'MarionnaudParis TextBookItalic';
+        font-size: 40px;
+        text-align: left;
+    }
+    .txt_container_header p {
+        text-align: left;
+    }
+    .cta_container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+    }
+        /* CTA - HEADER */
+    .xl_cta_desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Sofia Pro Bold';
+        width: 100%;
+        height: 40px;
+        padding: 0 30px;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+        /* CTA - HEADER */
+    /* SECTION 1 : HEADER */
+}
+</style>
+<!--Bannière Header-->
+    <section class="section_1 section_header_with_cta">
+        <div class="bloc_1 the_header">
+            <div class="img_container_header">
+                <img src="https://placehold.co/360x220/png" alt="header" class="img_content_header_mobile">
+                <img src="https://placehold.co/625x347/png" alt="header" class="img_content_header_desktop">
+            </div>
+            <div class="txt_container_header">
+                <div class="txt_content_header">
+                    <!-- <span>Lorem ipsum dolor sit</span>
+                    <hr class="hr_mobile">
+                    <hr class="hr_desktop-v2"> -->
+                    <h1 class="h1_title"><span class="mrn-paris-italic-lowcase">Header with cta</span> consectetur <span class="mrn-paris-regul-ita-upcase">adipisicing</span></h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, aliquid repellat cumque tenetur, modi assumenda sed, 
+                        officia dolorem velit blanditiis perspiciatis.
+                    </p>
+                    <a href="#">
+                        <div class="cta_container">
+                            <div class="xl_cta xl_cta_desktop">Call to action</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Bannière Header-->

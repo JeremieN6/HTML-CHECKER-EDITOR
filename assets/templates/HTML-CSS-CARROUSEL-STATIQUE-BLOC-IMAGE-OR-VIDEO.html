@@ -1,0 +1,99 @@
+<style>
+    .container_bloc_carrousel_video {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 30px;
+    padding: 0px;
+}
+.container_carrousel_video img {
+    width: inherit;
+}
+.container_carrousel_video {
+    margin: 0 20px 0 0;
+}
+.txt_car_vid {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 0px;
+    background: transparent;
+}
+.mini-title_v3 {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 5px 0px 0px;
+}
+.small_p_v2 {
+    font-family: 'Sofia Pro Light';
+    text-align: left;
+    margin: 0px 0px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    .mini_carrousel_video {
+        margin: 50px 0 50px 0;
+    }
+    .mini_carrousel_videox3 .container_bloc_carrousel_video {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        overflow-x: hidden;
+        padding: 0px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .container_carrousel_video {
+        margin: 0 20px 0 0;
+    }
+}
+</style>
+<div class="mini_carrousel_video mini_carrousel_videox3">
+    <div class="title_h2">
+        <h2 class="h2_title">Carrousel Image or Video xN <span class="highlight">Static</span></h2>
+    </div>
+    <div class="container_bloc_carrousel_video">
+        <div class="container_carrousel_video">
+            <a href="#">
+                <img src="https://placehold.co/310x175/png" alt="Texte alternatif de l'image"
+                    class="content_carrousel_video">
+                <div class="txt_car_vid">
+                    <span class="mini-title_v3">Titre de l'image 1 du carrousel</span>
+                    <span class="small_p_v2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                        pariatur molestias quos, harum. Sit amet consectetur adipisicing. consectetur adipisicing
+                        elit.</span>
+                </div>
+            </a>
+        </div>
+        <div class="container_carrousel_video">
+            <a href="#">
+                <img src="https://placehold.co/310x175/png" alt="Texte alternatif de l'image"
+                    class="content_carrousel_video">
+                <div class="txt_car_vid">
+                    <span class="mini-title_v3">Titre de l'image 2 du carrousel</span>
+                    <span class="small_p_v2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                        pariatur molestias quos, harum. Sit amet consectetur adipisicing. consectetur adipisicing
+                        elit.</span>
+                </div>
+            </a>
+        </div>
+        <div class="container_carrousel_video">
+            <a href="#">
+                <img src="https://placehold.co/310x175/png" alt="Texte alternatif de l'image"
+                    class="content_carrousel_video">
+                <div class="txt_car_vid">
+                    <span class="mini-title_v3">Titre de l'image 3 du carrousel</span>
+                    <span class="small_p_v2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam pariatur molestias quos, harum. Sit amet consectetur adipisicing. consectetur adipisicing elit.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
